@@ -72,7 +72,7 @@ function chartByName() {
         .attr('stroke-opacity', 0.4)
         .attr('stroke-width', .5);
 
-    d3.csv("dji.csv", function(error, csv) {
+    d3.csv("../dji.csv", function(error, csv) {
         if (error) throw error;
 
         var data = d3.nest()
@@ -200,7 +200,7 @@ function chartByLength() {
         .attr('stroke-opacity', 0.4)
         .attr('stroke-width', .5);
 
-    d3.csv("dji.csv", function(error, csv) {
+    d3.csv("../dji.csv", function(error, csv) {
         if (error) throw error;
 
         var data = d3.nest()
@@ -326,7 +326,7 @@ function chartByActive() {
         .attr('stroke-opacity', 0.4)
         .attr('stroke-width', .5);
 
-    d3.csv("dji.csv", function(error, csv) {
+    d3.csv("../dji.csv", function(error, csv) {
         if (error) throw error;
 
         var data = d3.nest()
