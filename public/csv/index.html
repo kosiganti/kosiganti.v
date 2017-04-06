@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-csv/0.3.6/ng-csv.min.js"></script>
+    <script src="app.js"></script>
+    <title>Export</title>
+</head>
+<body ng-controller="getData">
+<div class="container-fluid">
+<button type="button"
+        class="btn btn-primary"
+        ng-csv="data"
+        filename="newdji.csv"
+        csv-header="['Date', 'Name', 'Active', 'Length', 'Data', 'Tango', 'India', 'Victor', 'Oscar']">Export to CSV</button>
+</div>
+</body>
+</html>

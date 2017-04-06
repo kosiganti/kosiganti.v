@@ -37,6 +37,14 @@ var rect = svg.append("g")
     .attr("y", function(d) { return d.getDay() * cellSize; })
     .datum(d3.timeFormat("%Y-%m-%d"));
 
+var circle = rect.append("circle")
+    .attr("r", 10);
+
+var star = d3.symbol()
+    .type(d3.symbolStar)
+    .size(10);
+
+var starData = star();
 
 svg.append("g")
     .attr("fill", "none")
@@ -62,8 +70,8 @@ d3.csv("dji.csv", function(error, csv) {
     if (error) throw error;
 
     var data = d3.nest()
-        .key(function(d) { return d.Date; })
-        .rollup(function(d) { 
+        .key(function(d) { /*console.log(d.Date);*/ return d.Date; })
+        .rollup(function(d) { /*console.log(d[0].Length);*/
             return {
                 Name:  d[0].Name,
                 Length: d[0].Length,

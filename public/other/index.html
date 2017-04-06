@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--Script Files to render the charts based on button clicked-->
+    <script src="render.js"></script>
+    <script src="legendSwitcher.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Tivo</title>
+</head>
+<body class="container-fluid">
+<div  class="col-lg-8">
+    <h3 class="text-center">Data Representation</h3>
+    <div class="center-block">
+    <button onclick="chartByName()" class=" btn btn-success">Name</button>
+    <button onclick="chartByLength()" class=" btn btn-danger">Length</button>
+    <button onclick="chartByActive()" class=" btn btn-primary">Active</button>
+    </div>
+    <div id="chart">
+    </div>
+
+</div>
+<div class="col-lg-4">
+    <h4 class="text-center">Legend</h4>
+    <div id="text"></div>
+    <div>
+        <p class="text-center caption small">(Hover on each date to get the details)</p>
+    </div>
+</div>
+<!--Include D3JS Library-->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</body>
+</html>

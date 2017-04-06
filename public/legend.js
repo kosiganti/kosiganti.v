@@ -115,3 +115,36 @@ svgContainer.append("text")
     .attr("x", 240)
     .attr("y", 210)
     .text("Name: Ink");
+
+    svgContainer.append("text")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 12)
+        .attr("text-anchor", "middle")
+        .attr("x", 150)
+        .attr("y", 250)
+        .text("Dark Shade");
+
+svgContainer.append("text")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 12)
+        .attr("text-anchor", "middle")
+        .attr("x", 240)
+        .attr("y", 250)
+        .text("Active: TRUE");
+
+    svgContainer.append("text")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 12)
+        .attr("text-anchor", "middle")
+        .attr("x", 150)
+        .attr("y", 280)
+        .attr("opacity", 0.4)
+        .text("Light Shade");
+
+    svgContainer.append("text")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 12)
+        .attr("text-anchor", "middle")
+        .attr("x", 240)
+        .attr("y", 280)
+        .text("Active: FALSE");
